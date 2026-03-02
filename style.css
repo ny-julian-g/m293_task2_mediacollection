@@ -1,0 +1,66 @@
+
+body{
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0.5em 1em;
+    color: aliceblue;
+    background-color: rgb(34, 34, 34);
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto 1fr auto; 
+    gap: 0.5em;
+    border: 1px solid aliceblue;
+    padding: 0.5em;
+}
+a{
+    color: aliceblue;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;   
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 1;
+    border: 1px solid aliceblue;
+}
+.logo{
+    width: 5rem;
+    height: auto;
+}
+.sidebar{
+    position: sticky;
+    background-color: rgb(34, 34, 34);
+    padding: 1em;
+    border: 1px solid aliceblue;
+    left: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2;
+}
+main{
+    background-color: rgb(34, 34, 34);
+    padding: 1em;
+    border: 1px solid aliceblue;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: auto;
+}
+.minecraft {
+    border: 1px solid aliceblue;
+}
+.hollow-knight {
+    border: 1px solid aliceblue;
+}
+footer{
+    padding: 1em;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: span 1;
+    border: 1px solid aliceblue;
+}
